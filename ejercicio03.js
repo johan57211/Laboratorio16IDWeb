@@ -1,4 +1,4 @@
 const boton = document.getElementById("boton");
-boton.addEventListener("click", function() {
+boton.addEventListener("click", () => {
     document.body.classList.toggle("oscuro");
 });
