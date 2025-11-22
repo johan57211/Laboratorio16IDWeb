@@ -1,4 +1,3 @@
-// Arreglo de productos de ejemplo
 const productos = [
     { nombre: "Laptop", precio: 1200 },
     { nombre: "Mouse", precio: 25 },
@@ -9,11 +8,9 @@ const boton = document.getElementById("generarTabla");
 const tablaDiv = document.getElementById("tablaDiv");
 
 boton.addEventListener("click", function() {
-    // Crear la tabla
     let tabla = document.createElement("table");
     tabla.border = "1";
 
-    // Encabezado
     let thead = document.createElement("thead");
     let filaCabecera = document.createElement("tr");
     let thNombre = document.createElement("th");
@@ -25,7 +22,6 @@ boton.addEventListener("click", function() {
     thead.appendChild(filaCabecera);
     tabla.appendChild(thead);
 
-    // Cuerpo
     let tbody = document.createElement("tbody");
     productos.forEach(function(prod) {
         let fila = document.createElement("tr");
@@ -39,7 +35,6 @@ boton.addEventListener("click", function() {
     });
     tabla.appendChild(tbody);
 
-    // Borra tabla anterior antes de generar una nueva
     tablaDiv.innerHTML = "";
     tablaDiv.appendChild(tabla);
 });
