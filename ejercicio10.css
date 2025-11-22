@@ -1,0 +1,12 @@
+.cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: relative;
+    left: 0;
+    transition: left 1s;
+}
+
+.cuadro.animar {
+    left: 500px;
+}
